@@ -1,0 +1,396 @@
+{
+  "seed": 42,
+  "labels": [
+    "Cartes",
+    "Compte",
+    "Paiements",
+    "Securite"
+  ],
+  "counts": {
+    "train": {
+      "Cartes": 1917,
+      "Compte": 1078,
+      "Paiements": 4828,
+      "Securite": 679
+    },
+    "val": {
+      "Cartes": 339,
+      "Compte": 190,
+      "Paiements": 852,
+      "Securite": 120
+    },
+    "test": {
+      "Cartes": 840,
+      "Compte": 440,
+      "Paiements": 1560,
+      "Securite": 240
+    }
+  },
+  "baseline_val": {
+    "accuracy": 0.5676215856095936,
+    "macro_f1": 0.18104547386315342
+  },
+  "val_grid": [
+    {
+      "model": "bow",
+      "stop_words": false,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 0.1,
+      "macro_f1": 0.9096685932946633
+    },
+    {
+      "model": "bow",
+      "stop_words": false,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 1,
+      "macro_f1": 0.9410754951253546
+    },
+    {
+      "model": "bow",
+      "stop_words": false,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 10,
+      "macro_f1": 0.9458258864933861
+    },
+    {
+      "model": "bow",
+      "stop_words": false,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 0.1,
+      "macro_f1": 0.9303113391636086
+    },
+    {
+      "model": "bow",
+      "stop_words": false,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 1,
+      "macro_f1": 0.9563893527627947
+    },
+    {
+      "model": "bow",
+      "stop_words": false,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 10,
+      "macro_f1": 0.9584913436893541
+    },
+    {
+      "model": "bow",
+      "stop_words": true,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 0.1,
+      "macro_f1": 0.870154858571458
+    },
+    {
+      "model": "bow",
+      "stop_words": true,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 1,
+      "macro_f1": 0.9198993516116775
+    },
+    {
+      "model": "bow",
+      "stop_words": true,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 10,
+      "macro_f1": 0.9290519807381712
+    },
+    {
+      "model": "bow",
+      "stop_words": true,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 0.1,
+      "macro_f1": 0.876660362481549
+    },
+    {
+      "model": "bow",
+      "stop_words": true,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 1,
+      "macro_f1": 0.935036088881807
+    },
+    {
+      "model": "bow",
+      "stop_words": true,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 10,
+      "macro_f1": 0.9343557975016934
+    },
+    {
+      "model": "tfidf",
+      "stop_words": false,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 0.1,
+      "macro_f1": 0.7895404631070649
+    },
+    {
+      "model": "tfidf",
+      "stop_words": false,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 1,
+      "macro_f1": 0.9208331803683512
+    },
+    {
+      "model": "tfidf",
+      "stop_words": false,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 10,
+      "macro_f1": 0.9527953361024064
+    },
+    {
+      "model": "tfidf",
+      "stop_words": false,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 0.1,
+      "macro_f1": 0.6602014271845168
+    },
+    {
+      "model": "tfidf",
+      "stop_words": false,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 1,
+      "macro_f1": 0.9142475581765329
+    },
+    {
+      "model": "tfidf",
+      "stop_words": false,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 10,
+      "macro_f1": 0.9552383601580656
+    },
+    {
+      "model": "tfidf",
+      "stop_words": true,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 0.1,
+      "macro_f1": 0.7651611731926783
+    },
+    {
+      "model": "tfidf",
+      "stop_words": true,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 1,
+      "macro_f1": 0.9142075562496211
+    },
+    {
+      "model": "tfidf",
+      "stop_words": true,
+      "ngram": [
+        1,
+        1
+      ],
+      "C": 10,
+      "macro_f1": 0.934555686037142
+    },
+    {
+      "model": "tfidf",
+      "stop_words": true,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 0.1,
+      "macro_f1": 0.6640389709822649
+    },
+    {
+      "model": "tfidf",
+      "stop_words": true,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 1,
+      "macro_f1": 0.9070794106191894
+    },
+    {
+      "model": "tfidf",
+      "stop_words": true,
+      "ngram": [
+        1,
+        2
+      ],
+      "C": 10,
+      "macro_f1": 0.9385743700967273
+    }
+  ],
+  "chosen": {
+    "model": "bow",
+    "stop_words": false,
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 10.0,
+    "macro_f1": 0.9584913436893541
+  },
+  "test": {
+    "accuracy": 0.9691558441558441,
+    "macro_f1": 0.9573200409986454,
+    "micro_f1": 0.9691558441558441,
+    "per_class": {
+      "Cartes": {
+        "precision": 0.9771084337349397,
+        "recall": 0.9654761904761905,
+        "f1": 0.9712574850299401,
+        "support": 840
+      },
+      "Compte": {
+        "precision": 0.9575892857142857,
+        "recall": 0.975,
+        "f1": 0.9662162162162162,
+        "support": 440
+      },
+      "Paiements": {
+        "precision": 0.9696778269109286,
+        "recall": 0.9839743589743589,
+        "f1": 0.9767737830098632,
+        "support": 1560
+      },
+      "Securite": {
+        "precision": 0.958904109589041,
+        "recall": 0.875,
+        "f1": 0.9150326797385621,
+        "support": 240
+      }
+    },
+    "confusion_matrix": [
+      [
+        811,
+        7,
+        20,
+        2
+      ],
+      [
+        3,
+        429,
+        7,
+        1
+      ],
+      [
+        10,
+        9,
+        1535,
+        6
+      ],
+      [
+        6,
+        3,
+        21,
+        210
+      ]
+    ]
+  },
+  "leakage": {
+    "vocab_train": 2184,
+    "vocab_all": 2532,
+    "macro_f1_correct": 0.9208331803683512,
+    "macro_f1_leaky": 0.9223768614668849
+  },
+  "threshold_securite_val": [
+    {
+      "t": 0.1,
+      "precision": 0.8308823529411765,
+      "recall": 0.9416666666666667
+    },
+    {
+      "t": 0.2,
+      "precision": 0.9173553719008265,
+      "recall": 0.925
+    },
+    {
+      "t": 0.3,
+      "precision": 0.9565217391304348,
+      "recall": 0.9166666666666666
+    },
+    {
+      "t": 0.4,
+      "precision": 0.9818181818181818,
+      "recall": 0.9
+    },
+    {
+      "t": 0.5,
+      "precision": 0.9908256880733946,
+      "recall": 0.9
+    },
+    {
+      "t": 0.6,
+      "precision": 0.9906542056074766,
+      "recall": 0.8833333333333333
+    },
+    {
+      "t": 0.7,
+      "precision": 1.0,
+      "recall": 0.85
+    },
+    {
+      "t": 0.8,
+      "precision": 1.0,
+      "recall": 0.8166666666666667
+    }
+  ],
+  "retrieval_recall_at_3": 1.0,
+  "own_set": {
+    "n": 30,
+    "accuracy": 0.4666666666666667,
+    "macro_f1": 0.4373611111111111
+  }
+}
